@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+	<h1>КиноБаза</h1>
+	<h2>Результаты поиска:</h2>
+	<ul>
+        {% for i in range(0, count) %}
+		<p> {{ i + 1 }} ) {{ arr[i]['title'] }} </p>
+		<p> {{ arr[i]['description'] }} </p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
